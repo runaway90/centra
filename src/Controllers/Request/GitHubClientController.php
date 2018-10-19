@@ -2,7 +2,7 @@
 namespace App\Controllers\Request;
 
 
-class CreateGitHubClientController
+class GitHubClientController
 {
 
 }

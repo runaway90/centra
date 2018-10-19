@@ -1,3 +1,4 @@
+NOT FINISHED!!!
 # Kanban board for Github issues
 
 ## About

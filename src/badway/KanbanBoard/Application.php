@@ -59,7 +59,7 @@ class Application {
 				'id' => $ii['id'], 'number' => $ii['number'],
 				'title'            	=> $ii['title'],
 				'body'             	=> Markdown::defaultTransform($ii['body']),
-     'url' => $ii['html_url'],
+                'url' => $ii['html_url'],
 				'assignee'         	=> (is_array($ii) && array_key_exists('assignee', $ii) && !empty($ii['assignee'])) ? $ii['assignee']['avatar_url'].'?s=16' : NULL,
 				'paused'			=> self::labels_match($ii, $this->paused_labels),
 				'progress'			=> self::_percent(
