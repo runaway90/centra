@@ -3,9 +3,9 @@ use KanbanBoard\Authentication;
 use KanbanBoard\GithubActual;
 use KanbanBoard\Utilities;
 
-require '../classes/KanbanBoard/Github.php';
-require '../classes/Utilities.php';
-require '../classes/KanbanBoard/Authentication.php';
+require '../badway/KanbanBoard/Github.php';
+require '../badway/Utilities.php';
+require '../badway/KanbanBoard/Authentication.php';
 
 $repositories = explode('|', Utilities::env('GH_REPOSITORIES'));
 $authentication = new \KanbanBoard\Login();
