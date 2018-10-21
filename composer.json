@@ -1,7 +1,7 @@
 {
 	"autoload": {
 		"classmap": [
-			"src/classes"
+			"src/"
 		]
 	},
 	"require": {
@@ -9,7 +9,9 @@
 		"vierbergenlars/php-semver": "^3.0",
 		"knplabs/github-api": "^1.5",
 		"michelf/php-markdown": "^1.6",
-		"phpunit/phpunit": "5.0.*"
+		"phpunit/phpunit": "5.0.*",
+		"guzzlehttp/guzzle": "~6.0"
+
 	},
 	"minimum-stability": "dev"
 }
