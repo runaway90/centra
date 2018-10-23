@@ -6,22 +6,24 @@ class Repository
     /**
      * @param string $name
      */
-    protected $name ;
+    protected $name;
+
     /**
-     * @param array $milestones
+     * @param array $issues
      */
-    protected $milestones = [];
+    public $issues = [];
 
     /**
      * Repository constructor.
      * @param string $name
-     * @param array $milestones
+     * @param array $issues
      */
-    public function __construct($name, array $milestones = [])
+    public function __construct($name, array $issues = [])
     {
         $this->name = $name;
-        $this->milestones = $milestones;
+        $this->issues = $issues;
     }
+
 
     /**
      * @return string
@@ -34,25 +36,25 @@ class Repository
     /**
      * @return array
      */
-    public function getMilestones()
+    public function getIssues()
     {
-        return $this->milestones;
+        return $this->issues;
     }
 
     /**
-     * @param array $milestones
+     * @param array $issues
      */
-    public function setMilestones($milestones)
+    public function setIssues($issues)
     {
-        $this->milestones = $milestones;
+        $this->issues = $issues;
     }
 
     /**
-     * @param array $milestone
+     * @param object $issue
      */
-    public function addMilestone($milestone)
+    public function addIssue($issue)
     {
-        $this->milestones = array_merge($this->milestones, $milestone);
+        $this->issues = array_merge($this->issues, [$issue]);
     }
 
 }

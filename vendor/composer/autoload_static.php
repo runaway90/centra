@@ -50,6 +50,10 @@ class ComposerStaticInitbba4b846ddc7f7b288f646548d662c5e
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -107,6 +111,10 @@ class ComposerStaticInitbba4b846ddc7f7b288f646548d662c5e
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -149,30 +157,9 @@ class ComposerStaticInitbba4b846ddc7f7b288f646548d662c5e
     );
 
     public static $classMap = array (
-        'App\\Controllers\\AuthenticationController' => __DIR__ . '/../..' . '/src/Controllers/Request/AuthenticationController.php',
-        'App\\Controllers\\Kanban\\Interfaces\\ChangeTable' => __DIR__ . '/../..' . '/src/Controllers/Kanban/Interfaces/ChangeTable.php',
-        'App\\Controllers\\Kanban\\Interfaces\\CreateTable' => __DIR__ . '/../..' . '/src/Controllers/Kanban/Interfaces/CreateTable.php',
-        'App\\Controllers\\Kanban\\Interfaces\\RemoteTable' => __DIR__ . '/../..' . '/src/Controllers/Kanban/Interfaces/RemoteTable.php',
-        'App\\Controllers\\Kanban\\TableController' => __DIR__ . '/../..' . '/src/Controllers/Kanban/TableController.php',
-        'App\\Controllers\\MainController' => __DIR__ . '/../..' . '/src/Controllers/MainController.php',
-        'App\\Controllers\\Request\\GitHubClientController' => __DIR__ . '/../..' . '/src/Controllers/Request/GitHubClientController.php',
-        'App\\Controllers\\Request\\Interfaces\\Authentication' => __DIR__ . '/../..' . '/src/Controllers/Request/Interfaces/Authentication.php',
-        'App\\Controllers\\Request\\Interfaces\\SendRequest' => __DIR__ . '/../..' . '/src/Controllers/Request/Interfaces/SendRequest.php',
-        'App\\Controllers\\Request\\Interfaces\\TakeResponse' => __DIR__ . '/../..' . '/src/Controllers/Request/Interfaces/TakeResponse.php',
-        'App\\Controllers\\Validation\\Interfaces\\ErrorsValidation' => __DIR__ . '/../..' . '/src/Controllers/Validation/Interfaces/ErrorsValidation.php',
-        'App\\Controllers\\Validation\\Interfaces\\Validate' => __DIR__ . '/../..' . '/src/Controllers/Validation/Interfaces/Validate.php',
-        'App\\Controllers\\Validation\\ValidationController' => __DIR__ . '/../..' . '/src/Controllers/Validation/ValidationController.php',
-        'App\\Models\\Account' => __DIR__ . '/../..' . '/src/Models/Account.php',
-        'App\\Models\\GitHubClient' => __DIR__ . '/../..' . '/src/Models/GitHubClient.php',
-        'App\\Models\\Milestones' => __DIR__ . '/../..' . '/src/Models/Milestones.php',
-        'App\\Models\\Repositories' => __DIR__ . '/../..' . '/src/Models/Repositories.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
-        'GithubClient' => __DIR__ . '/../..' . '/src/badway/KanbanBoard/Github.php',
-        'KanbanBoard\\Application' => __DIR__ . '/../..' . '/src/badway/KanbanBoard/Application.php',
-        'KanbanBoard\\Login' => __DIR__ . '/../..' . '/src/badway/KanbanBoard/Authentication.php',
-        'KanbanBoard\\Utilities' => __DIR__ . '/../..' . '/src/badway/KanbanBoard/Utilities.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
