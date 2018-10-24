@@ -1,4 +1,4 @@
-NOT FINISHED!!!
+NOT FINISHED!!! BUT WORKING!!!
 # Kanban board for Github issues
 
 ## About
