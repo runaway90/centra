@@ -1,7 +1,9 @@
 <?php
 namespace App\Controllers\Request;
 
-class AuthenticationController extends GitHubClientController
+use App\Controllers\Request\Interfaces\Authentication;
+
+class AuthenticationController extends GitHubClientController implements Authentication
 {
 
     public function authorization($urlRoute = '/', $method = 'GET')

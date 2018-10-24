@@ -3,19 +3,24 @@ namespace App\Models;
 
 class GitHubClient
 {
-    public static $URL_AUTHORIZATION = 'https://github.com/login/oauth/authorize';
-    public static $URL_TOKEN = 'https://github.com/login/oauth/access_token';
+
     public static $URL_BASE_GITHUB = 'https://api.github.com/';
 
     const GIT_HUB_TOKEN = 'git_hub_token';
 
+    /**
+     * @var string
+     */
     protected $clientId;
+    /**
+     * @var string
+     */
     protected $clientSecret;
 
     /**
      * GitHubClient constructor.
-     * @param $clientId
-     * @param $clientSecret
+     * @param string $clientId
+     * @param string $clientSecret
      */
     public function __construct($clientId, $clientSecret)
     {
@@ -23,12 +28,18 @@ class GitHubClient
         $this->clientSecret = $clientSecret;
     }
 
-    public function getClientSecret()
+    /**
+     * @return string
+     */
+    public function getClientSecret(): string
     {
         return $this->clientSecret;
     }
 
-    public function getClientId()
+    /**
+     * @return string
+     */
+    public function getClientId(): string
     {
         return $this->clientId;
     }

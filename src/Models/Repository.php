@@ -28,7 +28,7 @@ class Repository
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
@@ -36,7 +36,7 @@ class Repository
     /**
      * @return array
      */
-    public function getIssues()
+    public function getIssues(): array
     {
         return $this->issues;
     }

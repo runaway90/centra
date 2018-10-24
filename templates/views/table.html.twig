@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Table for repository:{{ repository }}</h2>
+<table style="width:100%">
+    <tr>
+        <th>Milestone number</th>
+        <th>Milestone id</th>
+        <th>Title of milestone</th>
+        <th>State</th>
+        <th>Count of open issues</th>
+        <th>Count of close issues</th>
+        <th>Link</th>
+        <th>Process</th>
+        <th>Percent of complete </th>
+
+
+
+    </tr>
+
+    {% for milestone in milestones %}
+
+        <tr>
+            <td>{{ milestone.milestone_number }}</td>
+            <td>{{ milestone.milestone_id }}</td>
+            <td>{{ milestone.milestone_title }}</td>
+            <td>{{ milestone.milestone_state }}</td>
+            <td>{{ milestone.milestone_open_issues }}</td>
+            <td>{{ milestone.milestone_closed_issues }}</td>
+                        <td>
+                            <a href=>{{ milestone.milestone_url }}</a>
+                        </td>
+            <td>{{ milestone.milestone_process }}</td>
+            <td>{{ milestone.milestone_percent }}</td>
+
+        </tr>
+
+    {% endfor %}
+
+</table>
+
+
+</body>
+</html>

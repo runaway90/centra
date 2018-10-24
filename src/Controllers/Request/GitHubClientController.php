@@ -1,14 +1,16 @@
 <?php
 namespace App\Controllers\Request;
 
+use App\Controllers\Request\Interfaces\ClientRequest;
+use App\Controllers\Request\Interfaces\TakeResponse;
 use App\Models\GitHubClient;
 use App\Models\Repository;
 use GuzzleHttp\Client as ClientGuzzle;
 
-class GitHubClientController extends GitHubClient
+class GitHubClientController extends GitHubClient implements ClientRequest, TakeResponse
 {
 
-    public function clientGitHub()
+    public function startClientGitHub()
     {
         $client = new ClientGuzzle(['base_uri' => GitHubClient::$URL_BASE_GITHUB]);
         return $client;
