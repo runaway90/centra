@@ -1,0 +1,25 @@
+Hi, i`m Bezgin V. and here are my solution for practice test for Centra company.
+
+Give me a chance to explane my solution:
+
+Firstly I wanted to rewrite code from the test. But when I reading this, I not understood structure of code(Some time class had function from another).
+Then, I tried to understand process of logic. It was wrote better, but some things (as for my attantion) was not needed.
+Then, I tried to run this THE MACHINE and not found normal documentation for libraries GitHubClient. I tried discover that, but it was difficult to understand.
+Than, (firstly in my life) I read GitHubAPI v.3(It`s simple API) and understood that rewriting of the test I must will start from API.
+
+Now solution is a simple API Client and process of building table(with Models) based on GuzzleHTTPClient with TWIG-template.
+I not decide to use big frameworks(like as Symfony or Laravel) because I wanted to try rewrite code by myself.
+
+HOW TO USE.
+1. Clone repo from git.
+2. Install packages from composer and check user/group permissions.
+3. Configure local virtual host with Apache or NGINX(with route to ..../centra/public/index.php) and add this host name to local host list( /etc/hosts).
+4. In file index.php, You need to add CLIENT_ID, CLIENT_SECRET, REPOSITORY_NAME, OWNER. (I wrote test data, You can change it).
+5. Open name of local host site in browser.
+
+FOR 'MANUAL' TEST with command line: run command 'php public/php.php' and take response with all information about repository with REPOSITORY_NAME.
+
+To do :
+1.Deploy.
+2.Add possible to authorization with token.
+3.Create page with input CLIENT_ID, CLIENT_SECRET, REPOSITORY_NAME, OWNER and validation of it.
